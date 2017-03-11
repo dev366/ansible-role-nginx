@@ -1,0 +1,10 @@
+---
+- name: nginx - Add repository
+  yum: name="{{ item }}" state=present
+  with_items:
+    - epel-release
+
+- name: nginx - Install package
+  yum: name="{{ item }}" state=present
+  with_items:
+    - nginx

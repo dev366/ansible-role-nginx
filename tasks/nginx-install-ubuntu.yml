@@ -1,0 +1,5 @@
+---
+- name: nginx - Install package
+  apt: name="{{ item }}" state=present
+  with_items:
+    - nginx

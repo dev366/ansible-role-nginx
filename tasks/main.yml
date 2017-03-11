@@ -1,0 +1,2 @@
+---
+- include: nginx-install-{{ ansible_distribution | lower }}.yml
